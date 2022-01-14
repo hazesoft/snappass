@@ -10,13 +10,22 @@
     <link href="{{ config.STATIC_URL }}/snappass/css/custom.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+  <section class="main-banner">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">Share Secret</a>
-        </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="logo-block">
+                      <a href="https://keplerhosting.com"><img src="{{ config.STATIC_URL }}/snappass/images/logo.svg" alt=""></a>
+                  </div>
+                  <div class="title-block text-white">
+                      <h1>Send credentials<br/>
+                          Securely with Kepler Pass</h1>
+                  </div>
+              </div>
+          </div>
       </div>
-    </nav>
+  </section>
+
 
     {% block content %}{% endblock %}
     <script src="{{ config.STATIC_URL }}/jquery/jquery-1.12.4.min.js"></script>

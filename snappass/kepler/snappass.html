@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Snappass - Share Secrets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.7.0" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo-block">
+                    <a href="#"><img src="images/logo.svg" alt=""></a>
+                </div>
+                <div class="title-block text-white">
+                    <h1>Send credentials<br/>
+                        Securely with Kepler Pass</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-block">
+                    <h2><img src="images/lock.svg" alt=""> Set Secret</h2>
+                </div>
+
+                <form role="form" id="password_create" method="post" autocomplete="off">
+                    <div class="input-group">
+                        <span class="input-group-addon"><img src="images/shield.svg" alt=""></span>
+                        <textarea rows="10" cols="50" id="password" name="password" autofocus="true"
+                                  class="form-control"
+                                  placeholder="SnapPass allows you to share secrets in a secure, ephemeral way. Input a single or multi-line secret, its expiration time, and click Generate URL. Share the one-time use URL with your intended recipient."
+                                  aria-describedby="basic-addon1" autocomplete="off" required></textarea>
+                    </div>
+
+                    <div class="lower-block">
+                        <select class="form-control" name="ttl">
+                            <option value="Two Weeks">Two Weeks</option>
+                            <option value="Week" selected="selected">Week</option>
+                            <option value="Day">Day</option>
+                            <option value="Hour">Hour</option>
+                        </select>
+
+                        <button type="submit" class="btn btn-primary" id="submit">Generate URL <img src="images/arrow-right.svg" alt=""></button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

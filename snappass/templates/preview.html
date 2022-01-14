@@ -1,19 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-  <section>
-    <div class="page-header">
-      <h1>Secret</h1>
-    </div>
-    <p class="lead">You can only reveal the secret once!</p>
+
+<section class="main-content">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-6 margin-bottom-10">
-        <button id="revealSecret" type="button" class="btn-lg btn-primary">Reveal secret</button>
+      <div class="col-md-12">
+          <div class="heading-block">
+              <h2><img src="images/lock.svg" alt="">Secret</h2>
+          </div>
+
+          <p class="lead">You can only reveal the secret once!</p>          
+
+          <div class="input-group copy-link">
+            <span class="input-group-addon"><img src="images/shield.svg" alt=""></span>
+            <span class="input-group-addon">
+                <button id="revealSecret" type="button" class="btn-lg btn-primary">Reveal secret</button>
+            </span>            
+          </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 {% endblock %}
 
 {% block js %}

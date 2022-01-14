@@ -266,3 +266,52 @@ select.form-control {
 }
 
 
+
+
+.logo-block img {
+    width: 350px;
+}
+
+.input-group.copy-link.reveal-secret {
+    display: flex;
+    align-items: center;
+}
+
+.input-group.copy-link.reveal-secret .input-group-addon:first-child {
+    flex: 0 0 36px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-group.copy-link.reveal-secret .input-group-addon:last-child {
+    flex: 0 0 calc(100% - 36px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-group.copy-link.reveal-secret .input-group-addon:last-child button {
+    color: #005AF9;
+    width: 100%;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'CircularStd-Bold';
+}
+
+.input-group.copy-link.reveal-secret .input-group-addon:last-child button:active:focus,
+.input-group.copy-link.reveal-secret .input-group-addon:last-child button:focus-visible {
+    background-color: #fff;
+    border-color: #fff;
+    outline: none;
+}
+
+.btn-primary:active:focus{
+    background-color: #005AF9;
+    border-color: #005AF9;
+    outline: none;
+}
+
+.btn-primary:focus-visible {
+    outline: none;
+}

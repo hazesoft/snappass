@@ -7,13 +7,13 @@
       <div class="col-md-12">
 
           <div class="heading-block">
-              <h2><img src="images/lock.svg" alt=""> Share Secret Link</h2>
+              <h2><img src="{{ config.STATIC_URL }}/snappass/images/lock.svg" alt=""> Share Secret Link</h2>
           </div>    
 
           <p>The secret has been temporarily saved. Send the following URL to your intended recipient.</p>
 
           <div class="input-group copy-link">
-            <span class="input-group-addon"><img src="images/shield.svg" alt=""></span>
+            <span class="input-group-addon"><img src="{{ config.STATIC_URL }}/snappass/images/shield.svg" alt=""></span>
                       
             
               <input type="text" class="form-control" id="password-link" value="{{ password_link }}" readonly="readonly">
@@ -23,7 +23,7 @@
                 <button title="Copy to clipboard" type="button" class="btn btn-primary copy-clipboard-btn"
                       id="copy-clipboard-btn" data-clipboard-target="#password-link"
                       data-placement='bottom'>
-                  <img src="images/copy.svg" alt="">
+                  <img src="{{ config.STATIC_URL }}/snappass/images/copy.svg" alt="">
                 </button>
               </span>
             
